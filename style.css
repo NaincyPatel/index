@@ -1,0 +1,107 @@
+/* Naincy Patel */
+/* Student Number: 8825502 */
+
+html {
+  font: 20px Arial, sans-serif;
+}
+
+h1, h2 {
+  font-variant: small-caps;
+  color:rgb(12, 187, 56)
+}
+
+figcaption {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 1.8rem;
+  color:rgb(230, 157, 62)
+
+}
+
+q {
+  font-style: italic;
+  font-family: cursive;
+  font-size: 1.5rem;
+}
+
+footer p {
+  font-size: 0.7rem;
+}
+
+body {
+  padding: 2rem;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1200px;
+}
+
+header, footer {
+  text-align: center;
+}
+
+.main-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+#bio {
+  text-align: left;
+}
+
+.main-section-figure {
+  padding: 1rem;
+  margin: 25px auto;
+}
+
+.image-container {
+width: 60%;
+height: 80%;
+
+}
+ 
+#absolute-path-image {
+  border: 2px solid rgb(230, 157, 62); 
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px #a6d9fc;
+  background: hsla(210, 74%, 52%, 0.3);
+  width: 600px;
+  height: auto;
+}
+
+#relative-path-image {
+  border: 2px solid rgb(230, 157, 62); 
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px #a6d9fc;
+  background: hsla(210, 74%, 52%, 0.3);
+  width: 600px;
+  height: auto;
+
+}
+
+blockquote#quote q {
+  padding: 10px;
+}
+
+iframe, video {
+  width: 600px;
+  height: 400px;
+  padding: 10px;
+  border: 2px solid rgb(230, 157, 62)
+
+}
+
+
+header, footer {
+  border: 2px solid #f88335; 
+  background: linear-gradient(to right,#a6d9fc,#23c1e9);
+}
+
+footer p {
+  color: #fa8e12; 
+}
+
+main section {
+  background-color: hsla(210, 74%, 52%, 0.3); 
+}
