@@ -1,21 +1,27 @@
 /* Naincy Patel */
 /* Student Number: 8825502 */
-
+*{
+  box-sizing: border-box; 
+}
+/* font size and type */
 html {
-  font: 20px Arial, sans-serif;
+  font: 15px Arial, sans-serif;
+
 }
 
-h1, h2 {
+
+h1,
+h2 {
   font-variant: small-caps;
-  color:rgb(12, 187, 56)
+  color: rgb(12, 187, 56)
 }
 
+/* for figure caption */
 figcaption {
   font-weight: bold;
   font-variant: small-caps;
   font-size: 1.8rem;
-  color:rgb(230, 157, 62)
-
+  color: rgb(12, 187, 114)
 }
 
 q {
@@ -28,24 +34,35 @@ footer p {
   font-size: 0.7rem;
 }
 
-body {
-  padding: 2rem;
-  margin: 0 auto;
-  width: 95%;
-  max-width: 1200px;
-}
 
-header, footer {
-  text-align: center;
+body {
+  padding: 5px 20px;
+  margin: 0 auto;
+  width: 100%;
+  float: left;
+  text-align: left;
+  font-family: Arial, sans-serif;
 }
 
 .main-section {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.right-section{
   text-align: center;
-  padding: 2rem;
+}
+.left-section {
+  text-align: left;
+  margin:0;
+  padding: 0;
+  /* padding: 2rem; */
 }
 
 #bio {
   text-align: left;
+  padding: 0 5px;
 }
 
 .main-section-figure {
@@ -54,13 +71,15 @@ header, footer {
 }
 
 .image-container {
-width: 60%;
-height: 80%;
+  width: 60%;
+  height: 80%;
 
 }
- 
+
+/* giving imgage colour boarder etc*/
+
 #absolute-path-image {
-  border: 2px solid rgb(230, 157, 62); 
+  border: 2px solid rgb(230, 157, 62);
   border-radius: 30px;
   padding: 20px;
   box-shadow: 5px 5px 5px #a6d9fc;
@@ -70,38 +89,386 @@ height: 80%;
 }
 
 #relative-path-image {
-  border: 2px solid rgb(230, 157, 62); 
+  border: 2px solid rgb(13, 16, 153);
   border-radius: 30px;
   padding: 20px;
   box-shadow: 5px 5px 5px #a6d9fc;
-  background: hsla(210, 74%, 52%, 0.3);
-  width: 600px;
+  background: hsla(210, 45%, 64%, 0.3);
+  width: 100%;
+  float: left;
   height: auto;
-
 }
 
 blockquote#quote q {
   padding: 10px;
 }
 
-iframe, video {
-  width: 600px;
-  height: 400px;
-  padding: 10px;
-  border: 2px solid rgb(230, 157, 62)
 
+/* video*/
+iframe,
+video {
+  width: 100%;
+  height: 700px;
+  padding: 10px;
+  border: 2px solid rgb(13, 16, 153)
 }
 
 
 header, footer {
-  border: 2px solid #f88335; 
-  background: linear-gradient(to right,#a6d9fc,#23c1e9);
+  text-align: center;
+  border: 2px solid #33a6e9;
+  background: linear-gradient(#3c4de6, #a0b7e0,#414df7);
+}
+/* created nav for the home and contact to give it proper look */
+nav {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  margin: 5px 0;
+  background-color: #71a3db;
+  padding: 5px 40px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: stretch;
+  width: 100%;
+  gap: 5px;
+} 
+
+nav li {
+  display: flex;
+  width: 49%;
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5px 0;
+  border: 2px solid #bde9fd;
+  background-color: #ddf2f3;
+  color: rgb(12, 11, 11);
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+}
+
+nav li a:hover {
+  background-color: rgb(231, 237, 241);
+  color: #0c0f11;
+  border-color: rgb(7, 7, 7);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 footer p {
-  color: #fa8e12; 
+  color: #1161da;
 }
 
 main section {
-  background-color: hsla(210, 74%, 52%, 0.3); 
+  /* background-color: hsla(210, 74%, 52%, 0.3); */
+  width: 70%;
+  float: left;
+}
+
+#next-section {
+  clear: both;
+}
+
+/* aside */
+aside {
+  width: 30%;
+  float: left;
+  text-align: center;
+ 
+}
+
+aside h3 {
+  font-variant: small-caps;
+  color: blue;
+  text-align: center;
+}
+
+aside table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+aside td,
+aside th {
+  border: 1px solid #7fc3eb;
+  text-align: left;
+  padding: 8px;
+}
+
+aside th {
+  font-weight: bold;
+  color: rgb(63, 111, 201);
+}
+
+aside a {
+  text-decoration: none;
+  color: rgb(63, 111, 201);
+  line-height: 2;
+  font-weight: 700;
+}
+
+aside a:hover {
+  color: purple;
+}
+
+aside ul {
+  list-style: none;
+  text-align: left;
+}
+
+body {
+  background-color: rgb(194, 224, 245);
+  font-family: sans-serif;
+}
+
+.main {
+  /* padding: 1em; */
+  /* box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.1); */
+}
+
+/* creatded a form name contact and giving it colour border*/
+
+.main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.main label {
+  font-size: 1.1em;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.main input[type="text"],
+.main input[type="email"] {
+  height: 2em;
+  padding: 0.5em;
+  width: 10em;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+.main button[type="submit"] {
+  padding: 0.5em 2em;
+  font-size: 1.1em;
+  border-radius: 5px;
+  background-color: lightblue;
+  color: white;
+  cursor: pointer;
+}
+
+#biography-div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#biography-div div {
+  display: flex;
+  width: 50%;
+}
+
+#image {
+  margin: 0px 25px;
+}
+
+.footer {
+  background-color: lightgray;
+  padding: 1em;
+  text-align: center;
+  margin-top: 1em;
+  clear: both;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .main input[type="text"],
+  .main input[type="email"] {
+    width: 100%;
+  }
+
+  .main button[type="submit"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+
+  .main label {
+    font-size: 1em;
+  }
+
+  .main input[type="text"],
+  .main input[type="email"] {
+    height: 1.5em;
+  }
+
+  .main button[type="submit"] {
+    padding: 0.4em 1em;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+
+  .main label {
+    font-size: 0.9em;
+  }
+
+  .main input[type="text"],
+  .main input[type="email"] {
+    height: 1.2em;
+  }
+
+  .main button[type="submit"] {
+    padding: 0.3em 0.8em;
+    font-size: 0.9em;
+  
+  }
+}
+
+/* aligning contact link to right side
+#contact-link {
+  float: right;
+  width: 50%;
+}
+
+/* aligning home link to left side*/
+
+/* #home-link {
+  float: left;
+  width: 50%;
+} */ 
+
+#side-section {
+  float: left;
+  width: 25%;
+
+}
+
+#quote-section {
+  border: 5px solid #5888e0;
+  width: 100%;
+  box-shadow: 10px 8px 8px #96ceee;
+}
+
+#video-section {
+  width: 100%;
+}
+
+/* Form Styles */
+
+form {
+  padding: 10px; 
+  margin: 10px; 
+}
+
+label {
+  color: #0c0b0b;
+  font-variant: small-caps; 
+  font-weight: bold; 
+  margin-bottom: 20px; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+  width: 100%; 
+  height: 40px; 
+  padding: 11px; 
+  margin-bottom: 12px; 
+  box-sizing: border-box; 
+}
+
+
+
+/* Small screens */
+@media screen and (max-width: 768px) {
+  html {
+      font-size: 14px; 
+  }
+  .main-section{
+    flex-direction: column;
+  }
+  form{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  aside{
+    width: 100%;
+  }
+}
+
+
+/* Medium screens form to adjust alignment*/
+@media screen and (max-width: 1024px) {
+  
+  form {
+      width: 70%;
+      margin: auto;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  textarea,
+  select {
+      width: 90%;
+  }
+}
+
+/* Large screens form to adjust alignment */
+@media screen and (min-width: 1025px) {
+ 
+  form {
+      width: 70%;
+      margin: 0;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  textarea,
+  select {
+      width: 80%;
+  }
+}
+
+/* for the submit button*/
+input[type="submit"] {
+  width: 220%;
+  font-weight: bold;
+}
+
+.table-content{
+  margin-top: 20px;
 }
